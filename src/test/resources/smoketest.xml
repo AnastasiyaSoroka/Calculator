@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="TestListeners"></listener>
+    </listeners>
+    <test name="sum">
+        <classes>
+            <class name="CalculatorSumTest"/>
+        </classes>
+    </test>
+    <test name="sub">
+        <classes>
+
+            <class name="CalculatorSubTest"/>
+        </classes>
+    </test>
+    <test name="mult">
+        <classes>
+            <class name="CalculatorMultTest"/>
+        </classes>
+    </test>
+    <test name="div">
+        <classes>
+            <class name="CalculatorDivTest"/>
+        </classes>
+    </test>
+</suite>
